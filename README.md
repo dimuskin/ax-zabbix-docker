@@ -6,7 +6,7 @@
 * Same template for both platforms (PASSIVE or ACTIVE mode)
 * Easy install
 
-#Instalation
+# Instalation
 
 ## Linux 
 * Install latest Zabbix agent (https://www.zabbix.com/documentation/3.2/manual/installation/install_from_packages/repository_installation)
