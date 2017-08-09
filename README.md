@@ -7,7 +7,7 @@
 * Basic triggers included
 * Easy install
 
-# Instalation
+# Installation
 
 ## Linux 
 * Install latest Zabbix agent (https://www.zabbix.com/documentation/3.2/manual/installation/install_from_packages/repository_installation)
