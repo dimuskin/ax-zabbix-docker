@@ -16,11 +16,14 @@
 * chmod 755 /etc/zabbix/docker.py
 * Add zabbix to docker group: # sudo usermod -a -G docker zabbix
 * Restart agent
-* Go to Zabbix GUI, select your server and add "Template AX App Docker ACTIVE" (or PASSIVE, if you use passive mode for data collecting) to this server.
 
 ## Windows
 * Install latest Zabbix agent (http://www.suiviperf.com/zabbix/)
 * Add zabbix-agent/windows_zabbix_agent.conf to C:\Program Files\Zabbix Agent\zabbix_agentd.conf (DO NOT REPLACE !!!)
 * Copy scripts\docker.ps1 to c:\zabbix
 * Restart agent
-* Go to Zabbix GUI, select your server and add "Template AX App Docker ACTIVE" (or PASSIVE, if you use passive mode for data collecting) to this server.
+
+## Zabbix GUI
+* Add template from zabbix-templates/zabbix_docker_templates.xml to Zabbix Templates (file contains 2 templates, to active and passive modes)
+* Go to Hosts list, select your server and add "Template AX App Docker ACTIVE" (or PASSIVE, if you use passive mode for data collecting) to your server.
+
