@@ -3,7 +3,8 @@
 * Support Windows or Linux (tested on Ubuntu and Debian) docker hosts
 * Discover running containers
 * Collect containers memory and CPU usage
-* Same template for both platforms (PASSIVE or ACTIVE mode)
+* Same template for both platforms
+* Basic triggers included
 * Easy install
 
 # Instalation
@@ -15,11 +16,11 @@
 * chmod 755 /etc/zabbix/docker.py
 * Add zabbix to docker group: # sudo usermod -a -G docker zabbix
 * Restart agent
-* Go to Zabbix and add "Template AX App Docker ACTIVE" (or PASSIVE) to this server.
+* Go to Zabbix GUI, select your server and add "Template AX App Docker ACTIVE" (or PASSIVE, if you use passive mode for data collecting) to this server.
 
 ## Windows
 * Install latest Zabbix agent (http://www.suiviperf.com/zabbix/)
 * Add zabbix-agent/windows_zabbix_agent.conf to C:\Program Files\Zabbix Agent\zabbix_agentd.conf (DO NOT REPLACE !!!)
 * Copy scripts\docker.ps1 to c:\zabbix
 * Restart agent
-* Go to Zabbix and add "Template AX App Docker ACTIVE" (or PASSIVE) to this server.
+* Go to Zabbix GUI, select your server and add "Template AX App Docker ACTIVE" (or PASSIVE, if you use passive mode for data collecting) to this server.
