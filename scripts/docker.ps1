@@ -42,6 +42,7 @@ function func_discovery {
 }
 
 function func_status($name) {
+	#$command = 'docker inspect --format "{{ .State.Status}}" '
 	
 	$status = (& docker inspect --format "{{ .State.Status}}" $name)
 	$code="0"
@@ -60,6 +61,13 @@ function func_status($name) {
 function func_mem($name) {
 	$line = (& docker stats  --no-stream --format "{{.MemUsage}}" $name)
 	$num_s,$pref = $line.split(' ')
+	
+	if ($pref.length -eq 0) {
+		# no space split !?
+		$num_s = $line.substring(0, $line.length - 3) 
+		$pref  = $line.substring($line.length - 3) 
+	}
+	
 	$num_f = [float]$num_s
 	switch ($pref) {
 		'KiB' {$num_f = $num_f * 1024}
