@@ -25,7 +25,7 @@
             <items/>
             <discovery_rules>
                 <discovery_rule>
-                    <name>Docker containers dicrovery</name>
+                    <name>Docker containers discovery</name>
                     <type>7</type>
                     <snmp_community/>
                     <snmp_oid/>
@@ -252,7 +252,7 @@
             <items/>
             <discovery_rules>
                 <discovery_rule>
-                    <name>Docker containers dicrovery</name>
+                    <name>Docker containers discovery</name>
                     <type>0</type>
                     <snmp_community/>
                     <snmp_oid/>
